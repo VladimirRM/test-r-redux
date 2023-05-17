@@ -1,6 +1,6 @@
 import {useSelector} from 'react-redux'
 import './App.css';
-import { LoginPage } from './components/LoginPage/LoginPage';
+import  LoginPage  from './components/LoginPage/LoginPage';
 
 function App() {
 
