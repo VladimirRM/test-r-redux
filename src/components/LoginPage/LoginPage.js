@@ -1,3 +1,6 @@
+import { PASSWORD } from '../../constans/constans'
+import { LOGIN } from '../../constans/constans'
+import { login } from '../../redux/actions/actions'
 import './style.css'
 import { useSelector ,useDispatch} from 'react-redux'
 
@@ -6,10 +9,11 @@ import { useSelector ,useDispatch} from 'react-redux'
     const state = useSelector(state => state.auth)
     const dispatch = useDispatch()
 
-    const handlerLogin = ()=>{
-
+    const handlerLogin = (event)=>{
+      dispatch(login(LOGIN,event.target.value))
     }
-    const handlerPassword = ()=>{
+    const handlerPassword = (event)=>{
+        dispatch(login(PASSWORD,event.target.value))
 
     }
     return (
