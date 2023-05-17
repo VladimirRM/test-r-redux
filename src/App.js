@@ -1,5 +1,6 @@
 import {useSelector} from 'react-redux'
 import './App.css';
+import { LoginPage } from './components/LoginPage/LoginPage';
 
 function App() {
 
@@ -7,7 +8,8 @@ function App() {
      console.log(state)
   return (
     <div className="App">
-   <h1>pp</h1>
+   <h1>Вход</h1>
+   <LoginPage/>
     </div>
   );
 }
