@@ -6,7 +6,10 @@ import { useSelector ,useDispatch} from 'react-redux'
     const state = useSelector(state => state.auth)
     const dispatch = useDispatch()
 
-    const handlerLOgin = ()=>{
+    const handlerLogin = ()=>{
+
+    }
+    const handlerPassword = ()=>{
 
     }
     return (
